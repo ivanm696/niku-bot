@@ -1,1 +1,1 @@
-try: BOT_TOKEN = os.getenv('BOT_TOKEN'); GROQ_API_KEY = os.getenv('GROQ_API_KEY'); except Exception as e: logging.error('Error loading environment variables: %s', e); raise
+try: BOT_TOKEN = os.getenv('BOT_TOKEN'); GROQ_API_KEY = os.getenv('GROQ_API_KEY'); except Exception as e: logging.error('Failed to load environment variables'); raise
